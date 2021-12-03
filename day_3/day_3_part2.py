@@ -12,7 +12,6 @@ o2_rem = data.copy()
 pos = N - 1
 while pos >= 0 and len(o2_rem) > 1:
     # Find the most common bit
-    print(o2_rem[pos])
     ones = sum([((x & (1 << pos)) >> pos) for x in o2_rem])
     zeros = len(o2_rem) - ones
 
